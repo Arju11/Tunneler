@@ -116,7 +116,7 @@ function executeTunneling() {
     hostsDetails.forEach(function (currentHostDetails) {
         if (currentHostIP.localeCompare(String(currentHostDetails.hostIp)) == 0) {
             let currentPorts = String(document.getElementById("ports-" + currentHostIP).value).split(",");
-            let tunnelProcess = tunnelProcesseGenerator.fork(`${__dirname}tunneler.js`,[
+            let tunnelProcess = tunnelProcesseGenerator.fork(`${__dirname}/tunneler.js`,[
                 currentHostIP,
                 String(currentPorts),
                 String(currentHostDetails.userName),
