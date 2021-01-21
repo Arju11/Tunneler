@@ -1,1 +1,1 @@
-# Electron Application for local port forwarding
+# Electron application for local port forwarding
