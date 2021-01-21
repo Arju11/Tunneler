@@ -1,0 +1,15 @@
+{
+  "name": "tunneler",
+  "version": "1.0.0",
+  "description": "Application for local port forwarding.",
+  "main": "app-launcher.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Arju Anil",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "tunnel-ssh": "^4.1.4"
+  }
+}

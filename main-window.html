@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main-window.css">
+    <title>Tunneler</title>
+</head>
+<body onload="loadHosts()" onbeforeunload="shutdownProcesses()">
+    <ul class="host-list" id="host-list-id"></ul><br>
+    <div class="main-window-div" id="main-window-id">
+        <button type="button" class="add-host-button" onclick="openAddHostForm()" 
+            id="add-host-button-id">ADD NEW HOST</button>
+        <button type="button" class="delete-hosts-button" onclick="openDeleteHostsForm()" 
+            id="delete-hosts-button-id">DELETE HOSTS</button>
+    </div>
+    <form class="add-host-form-popup" id="add-host-form-popup-id" onsubmit="return saveAddHostForm()">
+        <input type="text" placeholder="HOST IP" id="host-ip" required><br>
+        <input type="text" placeholder="USER NAME" id="user-name" required><br>
+        <input type="text" placeholder="PASSWORD" id="password" required><br><br>
+        <div class="add-host-form-popup-buttons">
+            <input type="submit" class="add-host-form-popup-button" value="SAVE">
+            <input type="button" class="add-host-form-popup-button" value="CLOSE" onclick="closeAddHostForm()">
+        </div>
+    </form>
+    <form class="delete-hosts-form-popup" id="delete-hosts-form-popup-id">
+        <div class="hosts-select-div" id="hosts-select-div-id"></div>
+        <div class="delete-hosts-form-popup-buttons">
+            <input type="submit" class="delete-hosts-form-popup-button" value="DELETE">
+            <input type="button" class="delete-hosts-form-popup-button" value="CLOSE" onclick="closeAddHostForm()">
+        </div>
+    </form>
+</body>
+<script src="./main-window.js"></script>
+</html>

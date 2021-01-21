@@ -1,0 +1,79 @@
+:focus {
+    outline: #ffffff auto 1px;
+}
+
+.host-list p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.host-div  {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-window-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+
+.add-host-button,
+.delete-hosts-button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    left: 5%;
+    top: 15%;
+    transform: translate(+5%, +15%);
+}
+
+.add-host-form-popup,
+.delete-hosts-form-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.add-host-form-popup input,
+.host-list input {
+    text-align: center;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.add-host-form-popup-buttons,
+.delete-hosts-form-popup-buttons {
+    text-align: center;
+    border: none;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add-host-form-popup-button,
+.delete-hosts-form-popup-button,
+.tunnel-button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
